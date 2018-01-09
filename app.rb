@@ -5,6 +5,10 @@ class App < Sinatra::Base
     erb :index
   end
 
+  get '/index' do
+    erb :create_puppy
+  end
+
   post '/display' do
     @name = params[:name].to_s
     @breed = params[:breed].to_s
