@@ -5,7 +5,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/index' do
+  post '/create' do
     erb :create_puppy
   end
 
